@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+typealias FetchPlanetsEntityGatewayCompletionHandler = (_ planets: Result<[Planet]>) -> Void
+
+protocol PlanetsGateway {
+    func fetchPlanets(completionHandler: @escaping FetchPlanetsEntityGatewayCompletionHandler)
+}
