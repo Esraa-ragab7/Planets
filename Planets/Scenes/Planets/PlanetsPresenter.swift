@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+protocol PlanetCellView {
+    func display(title: String)
+}
