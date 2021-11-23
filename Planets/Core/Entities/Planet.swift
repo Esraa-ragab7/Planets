@@ -8,7 +8,7 @@
 import Foundation
 
 struct Planet: Codable {
-    let name : String?
+    let name : String
     let rotationPeriod : String?
     let orbitalPeriod : String?
     let diameter : String?
