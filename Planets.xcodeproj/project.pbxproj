@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2088480274D5B62006D33BA /* PlanetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208847F274D5B62006D33BA /* PlanetsTableViewController.swift */; };
+		F2088482274D5C21006D33BA /* PlanetsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088481274D5C21006D33BA /* PlanetsPresenter.swift */; };
+		F2088484274D5E17006D33BA /* PlanetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2088483274D5E17006D33BA /* PlanetTableViewCell.swift */; };
 		F2B0147D274BF4BA009F36F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0147C274BF4BA009F36F9 /* AppDelegate.swift */; };
 		F2B0147F274BF4BA009F36F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0147E274BF4BA009F36F9 /* SceneDelegate.swift */; };
 		F2B01481274BF4BA009F36F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B01480274BF4BA009F36F9 /* ViewController.swift */; };
@@ -36,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F208847F274D5B62006D33BA /* PlanetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsTableViewController.swift; sourceTree = "<group>"; };
+		F2088481274D5C21006D33BA /* PlanetsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsPresenter.swift; sourceTree = "<group>"; };
+		F2088483274D5E17006D33BA /* PlanetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetTableViewCell.swift; sourceTree = "<group>"; };
 		F2B01479274BF4BA009F36F9 /* Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B0147C274BF4BA009F36F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B0147E274BF4BA009F36F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +84,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F208847C274CD30E006D33BA /* EntityGateway */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EntityGateway;
+			sourceTree = "<group>";
+		};
+		F208847D274CD321006D33BA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				F208847E274D5847006D33BA /* Planets */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		F208847E274D5847006D33BA /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+				F208847F274D5B62006D33BA /* PlanetsTableViewController.swift */,
+				F2088481274D5C21006D33BA /* PlanetsPresenter.swift */,
+				F2088483274D5E17006D33BA /* PlanetTableViewCell.swift */,
+			);
+			path = Planets;
+			sourceTree = "<group>";
+		};
 		F2B01470274BF4BA009F36F9 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +132,9 @@
 		F2B0147B274BF4BA009F36F9 /* Planets */ = {
 			isa = PBXGroup;
 			children = (
+				F2B014AF274C0B20009F36F9 /* Core */,
+				F208847C274CD30E006D33BA /* EntityGateway */,
+				F208847D274CD321006D33BA /* Scenes */,
 				F2B0147C274BF4BA009F36F9 /* AppDelegate.swift */,
 				F2B0147E274BF4BA009F36F9 /* SceneDelegate.swift */,
 				F2B01480274BF4BA009F36F9 /* ViewController.swift */,
@@ -129,6 +163,37 @@
 				F2B014A3274BF4BD009F36F9 /* Info.plist */,
 			);
 			path = PlanetsUITests;
+			sourceTree = "<group>";
+		};
+		F2B014AF274C0B20009F36F9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F2B014B0274C0B27009F36F9 /* Entities */,
+				F2B014B1274C0BA1009F36F9 /* Gateways */,
+				F2B014B2274C0BB1009F36F9 /* UseCases */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F2B014B0274C0B27009F36F9 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F2B014B1274C0BA1009F36F9 /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		F2B014B2274C0BB1009F36F9 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +326,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2088484274D5E17006D33BA /* PlanetTableViewCell.swift in Sources */,
 				F2B01481274BF4BA009F36F9 /* ViewController.swift in Sources */,
 				F2B0147D274BF4BA009F36F9 /* AppDelegate.swift in Sources */,
+				F2088482274D5C21006D33BA /* PlanetsPresenter.swift in Sources */,
+				F2088480274D5B62006D33BA /* PlanetsTableViewController.swift in Sources */,
 				F2B0147F274BF4BA009F36F9 /* SceneDelegate.swift in Sources */,
 				F2B01487274BF4BA009F36F9 /* Planets.xcdatamodeld in Sources */,
 			);
@@ -441,13 +509,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LGB62TRSZ6;
+				DEVELOPMENT_TEAM = MXPDHWAC44;
 				INFOPLIST_FILE = Planets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = JPMC.Planets;
+				PRODUCT_BUNDLE_IDENTIFIER = JPMC.Planets.eg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -460,13 +529,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = LGB62TRSZ6;
+				DEVELOPMENT_TEAM = MXPDHWAC44;
 				INFOPLIST_FILE = Planets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = JPMC.Planets;
+				PRODUCT_BUNDLE_IDENTIFIER = JPMC.Planets.eg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
