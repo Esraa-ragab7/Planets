@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct ProductionServer {
+    static let baseURL = "https://swapi.dev/api/"
+}
