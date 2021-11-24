@@ -36,6 +36,10 @@
 		F20884CA274E9AFA006D33BA /* PlanetCellViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884C9274E9AFA006D33BA /* PlanetCellViewSpy.swift */; };
 		F20884CC274E9C2E006D33BA /* PlanetsViewSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884CB274E9C2E006D33BA /* PlanetsViewSpy.swift */; };
 		F20884CE274EA0A8006D33BA /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884CD274EA0A8006D33BA /* NSError.swift */; };
+		F20884D0274EA783006D33BA /* ApiClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884CF274EA783006D33BA /* ApiClientTest.swift */; };
+		F20884D2274EA797006D33BA /* CachePlanetsGatewayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884D1274EA797006D33BA /* CachePlanetsGatewayTest.swift */; };
+		F20884D4274EA7E2006D33BA /* CoreDataPlanetsGatewayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884D3274EA7E2006D33BA /* CoreDataPlanetsGatewayTest.swift */; };
+		F20884D7274EA901006D33BA /* URLSessionSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884D6274EA901006D33BA /* URLSessionSpy.swift */; };
 		F2B0147D274BF4BA009F36F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0147C274BF4BA009F36F9 /* AppDelegate.swift */; };
 		F2B0147F274BF4BA009F36F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0147E274BF4BA009F36F9 /* SceneDelegate.swift */; };
 		F2B01484274BF4BA009F36F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B01482274BF4BA009F36F9 /* Main.storyboard */; };
@@ -44,6 +48,9 @@
 		F2B0148C274BF4BD009F36F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B0148A274BF4BD009F36F9 /* LaunchScreen.storyboard */; };
 		F2B01497274BF4BD009F36F9 /* PresenterPlanetsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B01496274BF4BD009F36F9 /* PresenterPlanetsTests.swift */; };
 		F2B014A2274BF4BD009F36F9 /* PlanetsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B014A1274BF4BD009F36F9 /* PlanetsUITests.swift */; };
+		F2D0C96E274EB60D000C818C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0C96D274EB60D000C818C /* Result.swift */; };
+		F2D0C970274EB9CF000C818C /* InMemoryCoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0C96F274EB9CF000C818C /* InMemoryCoreDataStack.swift */; };
+		F2D0C972274EBA45000C818C /* NSManagedObjectContextSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0C971274EBA45000C818C /* NSManagedObjectContextSpy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +100,10 @@
 		F20884C9274E9AFA006D33BA /* PlanetCellViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetCellViewSpy.swift; sourceTree = "<group>"; };
 		F20884CB274E9C2E006D33BA /* PlanetsViewSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewSpy.swift; sourceTree = "<group>"; };
 		F20884CD274EA0A8006D33BA /* NSError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
+		F20884CF274EA783006D33BA /* ApiClientTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClientTest.swift; sourceTree = "<group>"; };
+		F20884D1274EA797006D33BA /* CachePlanetsGatewayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachePlanetsGatewayTest.swift; sourceTree = "<group>"; };
+		F20884D3274EA7E2006D33BA /* CoreDataPlanetsGatewayTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPlanetsGatewayTest.swift; sourceTree = "<group>"; };
+		F20884D6274EA901006D33BA /* URLSessionSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionSpy.swift; sourceTree = "<group>"; };
 		F2B01479274BF4BA009F36F9 /* Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B0147C274BF4BA009F36F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B0147E274BF4BA009F36F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +118,9 @@
 		F2B0149D274BF4BD009F36F9 /* PlanetsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlanetsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B014A1274BF4BD009F36F9 /* PlanetsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsUITests.swift; sourceTree = "<group>"; };
 		F2B014A3274BF4BD009F36F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D0C96D274EB60D000C818C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		F2D0C96F274EB9CF000C818C /* InMemoryCoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InMemoryCoreDataStack.swift; sourceTree = "<group>"; };
+		F2D0C971274EBA45000C818C /* NSManagedObjectContextSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedObjectContextSpy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,21 +275,27 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		F20884B9274E8BC6006D33BA /* Presenter */ = {
+		F20884B9274E8BC6006D33BA /* TestFiles */ = {
 			isa = PBXGroup;
 			children = (
 				F2B01496274BF4BD009F36F9 /* PresenterPlanetsTests.swift */,
+				F20884CF274EA783006D33BA /* ApiClientTest.swift */,
+				F20884D1274EA797006D33BA /* CachePlanetsGatewayTest.swift */,
+				F20884D3274EA7E2006D33BA /* CoreDataPlanetsGatewayTest.swift */,
 			);
-			path = Presenter;
+			path = TestFiles;
 			sourceTree = "<group>";
 		};
 		F20884BA274E8C7C006D33BA /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F20884D5274EA8EE006D33BA /* API */,
 				F20884C8274E9AC9006D33BA /* Views */,
 				F20884C5274E9352006D33BA /* UseCases */,
 				F20884BE274E8F2F006D33BA /* Gateways */,
 				F20884BB274E8C84006D33BA /* Creators */,
+				F2D0C96F274EB9CF000C818C /* InMemoryCoreDataStack.swift */,
+				F2D0C971274EBA45000C818C /* NSManagedObjectContextSpy.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -314,6 +334,15 @@
 				F20884CB274E9C2E006D33BA /* PlanetsViewSpy.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		F20884D5274EA8EE006D33BA /* API */ = {
+			isa = PBXGroup;
+			children = (
+				F20884D6274EA901006D33BA /* URLSessionSpy.swift */,
+				F2D0C96D274EB60D000C818C /* Result.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		F2B01470274BF4BA009F36F9 = {
@@ -357,7 +386,7 @@
 			isa = PBXGroup;
 			children = (
 				F20884BA274E8C7C006D33BA /* Helpers */,
-				F20884B9274E8BC6006D33BA /* Presenter */,
+				F20884B9274E8BC6006D33BA /* TestFiles */,
 				F2B01498274BF4BD009F36F9 /* Info.plist */,
 			);
 			path = PlanetsTests;
@@ -568,15 +597,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D0C972274EBA45000C818C /* NSManagedObjectContextSpy.swift in Sources */,
 				F20884C4274E910D006D33BA /* LocalPersistencePlanetsGatewaySpy.swift in Sources */,
 				F20884C2274E901B006D33BA /* ApiPlanetsGatewaySpy.swift in Sources */,
 				F2B01497274BF4BD009F36F9 /* PresenterPlanetsTests.swift in Sources */,
 				F20884CA274E9AFA006D33BA /* PlanetCellViewSpy.swift in Sources */,
+				F2D0C96E274EB60D000C818C /* Result.swift in Sources */,
 				F20884BD274E8C9C006D33BA /* Planet.swift in Sources */,
 				F20884CC274E9C2E006D33BA /* PlanetsViewSpy.swift in Sources */,
+				F20884D4274EA7E2006D33BA /* CoreDataPlanetsGatewayTest.swift in Sources */,
 				F20884C0274E8F54006D33BA /* PlanetsGatewaySpy.swift in Sources */,
+				F20884D2274EA797006D33BA /* CachePlanetsGatewayTest.swift in Sources */,
 				F20884C7274E9383006D33BA /* DisplayPlanetsUseCaseSpy.swift in Sources */,
+				F2D0C970274EB9CF000C818C /* InMemoryCoreDataStack.swift in Sources */,
 				F20884CE274EA0A8006D33BA /* NSError.swift in Sources */,
+				F20884D7274EA901006D33BA /* URLSessionSpy.swift in Sources */,
+				F20884D0274EA783006D33BA /* ApiClientTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
