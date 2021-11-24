@@ -13,6 +13,7 @@ class PlantesTableViewController: UITableViewController, PlanetsView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.backgroundView = UIImageView(image: #imageLiteral(resourceName: "Space"))
         
         configurator.configure(plantesTableViewController: self)
         presenter.viewDidLoad()
