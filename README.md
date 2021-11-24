@@ -18,6 +18,13 @@ Planets is an application designed to analyze any recipe and get a detailed nutr
 * Open the workspace Planets.xcodeproj.
 * Now you can run the project.
 
+
+
+![alt text](https://user-images.githubusercontent.com/13772702/143316833-c2844a47-c6e1-4473-994f-c88480146485.png)
+
+
+
+
 ## App Layers
 
 #### MVP Concepts
