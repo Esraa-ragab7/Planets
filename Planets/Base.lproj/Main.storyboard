@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Uk-bd-SyY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7zb-lR-dnW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -8,11 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Planets-->
         <scene sceneID="nq6-0H-D6g">
             <objects>
-                <tableViewController id="9Uk-bd-SyY" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UMa-4G-AnM">
+                <tableViewController id="9Uk-bd-SyY" customClass="PlantesTableViewController" customModule="Planets" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="UMa-4G-AnM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -25,29 +25,40 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utU-pV-ax8">
-                                            <rect key="frame" x="20" y="11" width="374" height="55"/>
+                                            <rect key="frame" x="0.0" y="2.5" width="414" height="72"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QwA-nM-wxM">
-                                                    <rect key="frame" x="10" y="10" width="354" height="35"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="10" y="15" width="394" height="42"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                    </variation>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="backgroundColor" red="0.79831450057509756" green="0.79831450057509756" blue="0.79831450057509756" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="QwA-nM-wxM" secondAttribute="bottom" constant="10" id="CIh-uc-t3J"/>
-                                                <constraint firstItem="QwA-nM-wxM" firstAttribute="leading" secondItem="utU-pV-ax8" secondAttribute="leading" constant="10" id="LQ4-WE-Yon"/>
-                                                <constraint firstAttribute="trailing" secondItem="QwA-nM-wxM" secondAttribute="trailing" constant="10" id="RJb-gB-pWN"/>
-                                                <constraint firstItem="QwA-nM-wxM" firstAttribute="top" secondItem="utU-pV-ax8" secondAttribute="top" constant="10" id="sje-nw-ANl"/>
+                                                <constraint firstAttribute="bottom" secondItem="QwA-nM-wxM" secondAttribute="bottom" constant="15" id="CIh-uc-t3J">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                                                </constraint>
+                                                <constraint firstItem="QwA-nM-wxM" firstAttribute="leading" secondItem="utU-pV-ax8" secondAttribute="leading" constant="10" id="LQ4-WE-Yon">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                </constraint>
+                                                <constraint firstAttribute="trailing" secondItem="QwA-nM-wxM" secondAttribute="trailing" constant="10" id="RJb-gB-pWN">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                                                </constraint>
+                                                <constraint firstItem="QwA-nM-wxM" firstAttribute="top" secondItem="utU-pV-ax8" secondAttribute="top" constant="15" id="sje-nw-ANl">
+                                                    <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                                                </constraint>
                                             </constraints>
                                         </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailingMargin" secondItem="utU-pV-ax8" secondAttribute="trailing" id="LXY-YT-9Ty"/>
-                                        <constraint firstItem="utU-pV-ax8" firstAttribute="top" secondItem="VrM-si-iaS" secondAttribute="topMargin" id="SHX-rx-07P"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="utU-pV-ax8" secondAttribute="bottom" id="ndV-L3-idJ"/>
-                                        <constraint firstItem="utU-pV-ax8" firstAttribute="leading" secondItem="VrM-si-iaS" secondAttribute="leadingMargin" id="ndx-eo-w0P"/>
+                                        <constraint firstAttribute="trailing" secondItem="utU-pV-ax8" secondAttribute="trailing" id="LXY-YT-9Ty"/>
+                                        <constraint firstItem="utU-pV-ax8" firstAttribute="top" secondItem="VrM-si-iaS" secondAttribute="top" constant="2.5" id="SHX-rx-07P"/>
+                                        <constraint firstAttribute="bottom" secondItem="utU-pV-ax8" secondAttribute="bottom" constant="2.5" id="ndV-L3-idJ"/>
+                                        <constraint firstItem="utU-pV-ax8" firstAttribute="leading" secondItem="VrM-si-iaS" secondAttribute="leading" id="ndx-eo-w0P"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -60,10 +71,30 @@
                             <outlet property="delegate" destination="9Uk-bd-SyY" id="b7q-fS-zC9"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Planets" id="K71-WJ-jNm"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vG3-6M-2fF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="97.101449275362327" y="142.63392857142856"/>
+            <point key="canvasLocation" x="1079.7101449275362" y="-2.0089285714285712"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uSe-jo-oMC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7zb-lR-dnW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xg0-eu-dc1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.45882352939999999" green="0.2470588235" blue="0.59607843140000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9Uk-bd-SyY" kind="relationship" relationship="rootViewController" id="lzO-0j-mFU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3UF-2n-jCT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169.56521739130437" y="-2.0089285714285712"/>
         </scene>
     </scenes>
     <resources>
