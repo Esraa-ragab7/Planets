@@ -86,7 +86,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xg0-eu-dc1">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.11457856769859198" green="0.13372373915548105" blue="0.40908362881449245" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" name="NavigationBarColor"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -99,11 +99,14 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="NavigationBarColor">
+            <color red="0.11372549019607843" green="0.13333333333333333" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="PlanetCellBackgroundColor">
-            <color red="0.79288948622325917" green="0.79288948622325917" blue="0.79288948622325917" alpha="0.32889268122821214" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.1984602345691559" green="0.68417807479123338" blue="0.8490385529178901" alpha="0.1251925890189243" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="PlanetCellTitleColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.033332551548597135" green="0.060163961168045378" blue="0.096909081375838979" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
