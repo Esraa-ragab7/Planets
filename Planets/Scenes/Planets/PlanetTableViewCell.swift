@@ -11,6 +11,7 @@ class PlanetTableViewCell: UITableViewCell, PlanetCellView {
 
     @IBOutlet weak var planetTitleLabel: UILabel!
 
+    // Display Cell Title
     func display(title: String) {
         planetTitleLabel.text = title
     }

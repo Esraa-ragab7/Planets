@@ -33,6 +33,7 @@ class PlanetsPresenterImplementation: PlanetsPresenter {
         return planets.count
     }
     
+    // init the Planets Presenter Implementation data
     init(view: PlanetsView,
          displayPlanetsUseCase: DisplayPlanetsUseCase) {
         self.view = view
@@ -40,6 +41,7 @@ class PlanetsPresenterImplementation: PlanetsPresenter {
     }
     
     func viewDidLoad() {
+        // Fetching the planets data
         self.displayPlanetsUseCase.displayPlanets { [weak self] (result) in
             guard let self = self else { return }
             switch result {
@@ -52,6 +54,7 @@ class PlanetsPresenterImplementation: PlanetsPresenter {
     }
     
     func configure(cell: PlanetCellView, forRow row: Int) {
+        // configure the planet cell and display the title
         let planet = planets[row]
         
         cell.display(title: planet.name)
@@ -60,12 +63,12 @@ class PlanetsPresenterImplementation: PlanetsPresenter {
     // MARK: - Private Functions
     
     fileprivate func handlePlanetsReceived(_ planets: [Planet]) {
+        // set planets data and refresh the view
         self.planets = planets
         view?.refreshPlanetsView()
     }
     
     fileprivate func handlePlanetsError(_ error: Error) {
-        // Here we could check the error code and display a localized error message
         view?.displayPlanetsRetrievalError(title: "Error", message: error.localizedDescription)
     }
 }

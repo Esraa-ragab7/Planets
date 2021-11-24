@@ -19,9 +19,9 @@ class PlanetsConfiguratorImplementation: PlanetsConfigurator {
         let apiPlanetsGateway = ApiPlanetsGatewayImplementation(apiClient: apiClient)
         
         let viewContext = CoreDataStackImplementation.sharedInstance.persistentContainer.viewContext
-        let coreDataBooksGateway = CoreDataPlanetsGateway(viewContext: viewContext)
+        let coreDataPlanetsGateway = CoreDataPlanetsGateway(viewContext: viewContext)
         let planetsGateway = CachePlanetsGateway(apiPlanetsGateway: apiPlanetsGateway,
-                                             localPersistencePlanetsGateway: coreDataBooksGateway)
+                                             localPersistencePlanetsGateway: coreDataPlanetsGateway)
         
         let displayPlanetsUseCase = DisplayPlanetsUseCaseImplementation(planetsGateway: planetsGateway)
 
