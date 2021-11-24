@@ -17,7 +17,13 @@ class PlanetsConfiguratorImplementation: PlanetsConfigurator {
         let apiClient = ApiClientImplementation(urlSessionConfiguration: URLSessionConfiguration.default,
                                                 completionHandlerQueue: OperationQueue.main)
         let apiPlanetsGateway = ApiPlanetsGatewayImplementation(apiClient: apiClient)
-        let displayPlanetsUseCase = DisplayPlanetsUseCaseImplementation(planetsGateway: apiPlanetsGateway)
+        
+        let viewContext = CoreDataStackImplementation.sharedInstance.persistentContainer.viewContext
+        let coreDataBooksGateway = CoreDataPlanetsGateway(viewContext: viewContext)
+        let planetsGateway = CachePlanetsGateway(apiPlanetsGateway: apiPlanetsGateway,
+                                             localPersistencePlanetsGateway: coreDataBooksGateway)
+        
+        let displayPlanetsUseCase = DisplayPlanetsUseCaseImplementation(planetsGateway: planetsGateway)
 
         // We should add router implementation here in case we handle directions and inject it inside the presenter
 
