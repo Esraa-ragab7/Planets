@@ -368,7 +368,7 @@
 		F2B0147B274BF4BA009F36F9 /* Planets */ = {
 			isa = PBXGroup;
 			children = (
-				F20884B6274E704B006D33BA /* Resources */,
+				F2D0C97B274ED131000C818C /* Supporting Files */,
 				F2088485274D6551006D33BA /* Extensions */,
 				F2B014AF274C0B20009F36F9 /* Core */,
 				F208847C274CD30E006D33BA /* EntityGateway */,
@@ -376,7 +376,6 @@
 				F2B0147C274BF4BA009F36F9 /* AppDelegate.swift */,
 				F2B0147E274BF4BA009F36F9 /* SceneDelegate.swift */,
 				F2B01482274BF4BA009F36F9 /* Main.storyboard */,
-				F2B0148A274BF4BD009F36F9 /* LaunchScreen.storyboard */,
 				F2B0148D274BF4BD009F36F9 /* Info.plist */,
 			);
 			path = Planets;
@@ -434,6 +433,15 @@
 				F208849D274D9759006D33BA /* DisplayPlanetsList.swift */,
 			);
 			path = UseCases;
+			sourceTree = "<group>";
+		};
+		F2D0C97B274ED131000C818C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2B0148A274BF4BD009F36F9 /* LaunchScreen.storyboard */,
+				F20884B6274E704B006D33BA /* Resources */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
