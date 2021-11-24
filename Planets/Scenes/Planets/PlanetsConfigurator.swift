@@ -6,3 +6,24 @@
 //
 
 import Foundation
+
+protocol PlanetsConfigurator {
+    func configure(plantesTableViewController: PlantesTableViewController)
+}
+
+class PlanetsConfiguratorImplementation: PlanetsConfigurator {
+    
+    func configure(plantesTableViewController: PlantesTableViewController) {
+        let apiClient = ApiClientImplementation(urlSessionConfiguration: URLSessionConfiguration.default,
+                                                completionHandlerQueue: OperationQueue.main)
+        let apiPlanetsGateway = ApiPlanetsGatewayImplementation(apiClient: apiClient)
+        let displayPlanetsUseCase = DisplayPlanetsUseCaseImplementation(planetsGateway: apiPlanetsGateway)
+
+        // We should add router implementation here in case we handle directions and inject it inside the presenter
+
+        let presenter = PlanetsPresenterImplementation(view: plantesTableViewController,
+                                                       displayPlanetsUseCase: displayPlanetsUseCase)
+        
+        plantesTableViewController.presenter = presenter
+    }
+}

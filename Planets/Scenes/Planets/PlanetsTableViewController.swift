@@ -8,11 +8,13 @@
 import UIKit
 
 class PlantesTableViewController: UITableViewController, PlanetsView {
+    var configurator = PlanetsConfiguratorImplementation()
     var presenter: PlanetsPresenter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configurator.configure(plantesTableViewController: self)
         presenter.viewDidLoad()
     }
 
@@ -29,14 +31,14 @@ class PlantesTableViewController: UITableViewController, PlanetsView {
         return cell
     }
     
-    // MARK: - BooksView
+    // MARK: - PlanetsView
     
     func refreshPlanetsView() {
-        
+        tableView.reloadData()
     }
     
     func displayPlanetsRetrievalError(title: String, message: String) {
-        
+        presentAlert(withTitle: title, message: message)
     }
     
 }
