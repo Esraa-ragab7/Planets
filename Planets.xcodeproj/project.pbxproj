@@ -22,6 +22,11 @@
 		F20884A1274D9951006D33BA /* ApiPlanetsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884A0274D9951006D33BA /* ApiPlanetsResponse.swift */; };
 		F20884A5274DA1A7006D33BA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884A4274DA1A7006D33BA /* Constants.swift */; };
 		F20884A7274DA355006D33BA /* PlanetsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884A6274DA355006D33BA /* PlanetsConfigurator.swift */; };
+		F20884AA274DC1F1006D33BA /* NSManagedObjectContext+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884A9274DC1F1006D33BA /* NSManagedObjectContext+Utils.swift */; };
+		F20884AC274DC295006D33BA /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884AB274DC295006D33BA /* CoreDataStack.swift */; };
+		F20884AF274DC443006D33BA /* LocalPersistencePlanetsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884AE274DC443006D33BA /* LocalPersistencePlanetsGateway.swift */; };
+		F20884B2274DC487006D33BA /* CoreDataPlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884B1274DC487006D33BA /* CoreDataPlanet.swift */; };
+		F20884B5274DC5F9006D33BA /* CachePlanetsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884B4274DC5F9006D33BA /* CachePlanetsGateway.swift */; };
 		F2B0147D274BF4BA009F36F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0147C274BF4BA009F36F9 /* AppDelegate.swift */; };
 		F2B0147F274BF4BA009F36F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0147E274BF4BA009F36F9 /* SceneDelegate.swift */; };
 		F2B01481274BF4BA009F36F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B01480274BF4BA009F36F9 /* ViewController.swift */; };
@@ -66,6 +71,11 @@
 		F20884A0274D9951006D33BA /* ApiPlanetsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiPlanetsResponse.swift; sourceTree = "<group>"; };
 		F20884A4274DA1A7006D33BA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F20884A6274DA355006D33BA /* PlanetsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsConfigurator.swift; sourceTree = "<group>"; };
+		F20884A9274DC1F1006D33BA /* NSManagedObjectContext+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Utils.swift"; sourceTree = "<group>"; };
+		F20884AB274DC295006D33BA /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		F20884AE274DC443006D33BA /* LocalPersistencePlanetsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPersistencePlanetsGateway.swift; sourceTree = "<group>"; };
+		F20884B1274DC487006D33BA /* CoreDataPlanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPlanet.swift; sourceTree = "<group>"; };
+		F20884B4274DC5F9006D33BA /* CachePlanetsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachePlanetsGateway.swift; sourceTree = "<group>"; };
 		F2B01479274BF4BA009F36F9 /* Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B0147C274BF4BA009F36F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B0147E274BF4BA009F36F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				F208848C274D79C1006D33BA /* API */,
+				F20884B3274DC5D4006D33BA /* Cache */,
+				F20884A8274DBE4D006D33BA /* LocalPersistence */,
 			);
 			path = EntityGateway;
 			sourceTree = "<group>";
@@ -188,6 +200,42 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		F20884A8274DBE4D006D33BA /* LocalPersistence */ = {
+			isa = PBXGroup;
+			children = (
+				F20884B0274DC476006D33BA /* Entities */,
+				F20884AD274DC41E006D33BA /* Gateways */,
+				F2B01485274BF4BA009F36F9 /* Planets.xcdatamodeld */,
+				F20884A9274DC1F1006D33BA /* NSManagedObjectContext+Utils.swift */,
+				F20884AB274DC295006D33BA /* CoreDataStack.swift */,
+			);
+			path = LocalPersistence;
+			sourceTree = "<group>";
+		};
+		F20884AD274DC41E006D33BA /* Gateways */ = {
+			isa = PBXGroup;
+			children = (
+				F20884AE274DC443006D33BA /* LocalPersistencePlanetsGateway.swift */,
+			);
+			path = Gateways;
+			sourceTree = "<group>";
+		};
+		F20884B0274DC476006D33BA /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F20884B1274DC487006D33BA /* CoreDataPlanet.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F20884B3274DC5D4006D33BA /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				F20884B4274DC5F9006D33BA /* CachePlanetsGateway.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		F2B01470274BF4BA009F36F9 = {
 			isa = PBXGroup;
 			children = (
@@ -222,7 +270,6 @@
 				F2B01488274BF4BD009F36F9 /* Assets.xcassets */,
 				F2B0148A274BF4BD009F36F9 /* LaunchScreen.storyboard */,
 				F2B0148D274BF4BD009F36F9 /* Info.plist */,
-				F2B01485274BF4BA009F36F9 /* Planets.xcdatamodeld */,
 			);
 			path = Planets;
 			sourceTree = "<group>";
@@ -384,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2B0148C274BF4BD009F36F9 /* LaunchScreen.storyboard in Resources */,
+				F20884B8274E7080006D33BA /* Colors.xcassets in Resources */,
 				F2B01489274BF4BD009F36F9 /* Assets.xcassets in Resources */,
 				F2B01484274BF4BA009F36F9 /* Main.storyboard in Resources */,
 			);
@@ -410,6 +458,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F20884AC274DC295006D33BA /* CoreDataStack.swift in Sources */,
 				F2088492274D9324006D33BA /* ApiResponse.swift in Sources */,
 				F2088484274D5E17006D33BA /* PlanetTableViewCell.swift in Sources */,
 				F2B01481274BF4BA009F36F9 /* ViewController.swift in Sources */,
@@ -418,15 +467,19 @@
 				F2088495274D93AA006D33BA /* PlanetsApiRequest.swift in Sources */,
 				F2B0147D274BF4BA009F36F9 /* AppDelegate.swift in Sources */,
 				F20884A1274D9951006D33BA /* ApiPlanetsResponse.swift in Sources */,
+				F20884B5274DC5F9006D33BA /* CachePlanetsGateway.swift in Sources */,
 				F2088482274D5C21006D33BA /* PlanetsPresenter.swift in Sources */,
+				F20884AF274DC443006D33BA /* LocalPersistencePlanetsGateway.swift in Sources */,
 				F2088480274D5B62006D33BA /* PlanetsTableViewController.swift in Sources */,
 				F2088490274D92B1006D33BA /* Result.swift in Sources */,
+				F20884AA274DC1F1006D33BA /* NSManagedObjectContext+Utils.swift in Sources */,
 				F2B0147F274BF4BA009F36F9 /* SceneDelegate.swift in Sources */,
 				F208849C274D966E006D33BA /* PlanetsGateway.swift in Sources */,
 				F208849E274D9759006D33BA /* DisplayPlanetsList.swift in Sources */,
 				F208849A274D952C006D33BA /* Planet.swift in Sources */,
 				F2B01487274BF4BA009F36F9 /* Planets.xcdatamodeld in Sources */,
 				F20884A7274DA355006D33BA /* PlanetsConfigurator.swift in Sources */,
+				F20884B2274DC487006D33BA /* CoreDataPlanet.swift in Sources */,
 				F2088488274D6590006D33BA /* UIViewController+Alert.swift in Sources */,
 				F20884A5274DA1A7006D33BA /* Constants.swift in Sources */,
 			);
