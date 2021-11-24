@@ -1,5 +1,5 @@
 //
-//  PlanetsGateway.swift
+//  PlanetsGatewaySpy.swift
 //  PlanetsTests
 //
 //  Created by Esraa Mohamed Ragab on 24/11/2021.
@@ -8,23 +8,11 @@
 import Foundation
 @testable import Planets
 
-class PlanetsGateway: BooksGateway {
-    var fetchBooksResultToBeReturned: Result<[Book]>!
-    var addBookResultToBeReturned: Result<Book>!
-    var deleteBookResultToBeReturned: Result<Void>!
+class PlanetsGatewaySpy: PlanetsGateway {
     
-    var deletedBook: Book!
+    var fetchPlanetsResultToBeReturned: Result<[Planet]>!
     
-    func fetchBooks(completionHandler: @escaping FetchBooksEntityGatewayCompletionHandler) {
+    func fetchPlanets(completionHandler: @escaping FetchPlanetsEntityGatewayCompletionHandler) {
         
-    }
-    
-    func add(parameters: AddBookParameters, completionHandler: @escaping AddBookEntityGatewayCompletionHandler) {
-        
-    }
-    
-    func delete(book: Book, completionHandler: @escaping DeleteBookEntityGatewayCompletionHandler) {
-        deletedBook = book
-        completionHandler(deleteBookResultToBeReturned)
     }
 }

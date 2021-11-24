@@ -58,7 +58,7 @@ struct VoidResponse: Decodable { }
 
 extension NSError {
     static func createPraseError() -> NSError {
-        return NSError(domain: "com.fortech.library",
+        return NSError(domain: "planets.com",
                        code: ApiParseError.code,
                        userInfo: [NSLocalizedDescriptionKey: "A parsing error occured"])
     }

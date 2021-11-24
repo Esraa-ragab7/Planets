@@ -1,17 +1,18 @@
 //
-//  DisplayPlanetsListSpy.swift
+//  DisplayPlanetsUseCaseSpy.swift
 //  PlanetsTests
 //
 //  Created by Esraa Mohamed Ragab on 24/11/2021.
 //
 
 import Foundation
-@testable import Library
+@testable import Planets
 
-class DisplayPlanetsListSpy: Displa {
-    var resultToBeReturned: Result<[Book]>!
+class DisplayPlanetsUseCaseSpy: DisplayPlanetsUseCase {
+    var resultToBeReturned: Result<[Planet]>!
     
-    func displayBooks(completionHandler: @escaping (Result<[Book]>) -> Void) {
+    func displayPlanets(completionHandler: @escaping DisplayPlanetsUseCaseCompletionHandler) {
         completionHandler(resultToBeReturned)
     }
+    
 }
