@@ -1,0 +1,5 @@
+
+
+1- Add more pages for example Planet Details Page.
+2- Make the design more clear
+3- Add UI testing
