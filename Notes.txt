@@ -1,0 +1,12 @@
+Notes:
+
+1- Get Data From the Local Persistence: I considered 2 approach 
+	A- call the get planets API then up to the result I decided to fetch the planets from the Local Persistence or not
+	B-  fetch the planets from the Local Persistence, display it, call the get planets API, and after getting the successful response displays the response planets data instead of the local data
+    but since there were no specific requirements I did the first approach.
+
+2- Design View:
+	A- I add colors Assets to separate it from the main Assets file.
+	B- I handled the colors to support dark mode.
+	C- I considered images from a google search and I tried to make it look as good as I can.
+   since there were no specific requirements for the design, I created it like this.
