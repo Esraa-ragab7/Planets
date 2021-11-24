@@ -27,9 +27,9 @@
 		F20884AF274DC443006D33BA /* LocalPersistencePlanetsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884AE274DC443006D33BA /* LocalPersistencePlanetsGateway.swift */; };
 		F20884B2274DC487006D33BA /* CoreDataPlanet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884B1274DC487006D33BA /* CoreDataPlanet.swift */; };
 		F20884B5274DC5F9006D33BA /* CachePlanetsGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20884B4274DC5F9006D33BA /* CachePlanetsGateway.swift */; };
+		F20884B8274E7080006D33BA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F20884B7274E7080006D33BA /* Colors.xcassets */; };
 		F2B0147D274BF4BA009F36F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0147C274BF4BA009F36F9 /* AppDelegate.swift */; };
 		F2B0147F274BF4BA009F36F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B0147E274BF4BA009F36F9 /* SceneDelegate.swift */; };
-		F2B01481274BF4BA009F36F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B01480274BF4BA009F36F9 /* ViewController.swift */; };
 		F2B01484274BF4BA009F36F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2B01482274BF4BA009F36F9 /* Main.storyboard */; };
 		F2B01487274BF4BA009F36F9 /* Planets.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F2B01485274BF4BA009F36F9 /* Planets.xcdatamodeld */; };
 		F2B01489274BF4BD009F36F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2B01488274BF4BD009F36F9 /* Assets.xcassets */; };
@@ -76,10 +76,10 @@
 		F20884AE274DC443006D33BA /* LocalPersistencePlanetsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalPersistencePlanetsGateway.swift; sourceTree = "<group>"; };
 		F20884B1274DC487006D33BA /* CoreDataPlanet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataPlanet.swift; sourceTree = "<group>"; };
 		F20884B4274DC5F9006D33BA /* CachePlanetsGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CachePlanetsGateway.swift; sourceTree = "<group>"; };
+		F20884B7274E7080006D33BA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		F2B01479274BF4BA009F36F9 /* Planets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Planets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2B0147C274BF4BA009F36F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2B0147E274BF4BA009F36F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F2B01480274BF4BA009F36F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F2B01483274BF4BA009F36F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F2B01486274BF4BA009F36F9 /* Planets.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Planets.xcdatamodel; sourceTree = "<group>"; };
 		F2B01488274BF4BD009F36F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -236,6 +236,15 @@
 			path = Cache;
 			sourceTree = "<group>";
 		};
+		F20884B6274E704B006D33BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F2B01488274BF4BD009F36F9 /* Assets.xcassets */,
+				F20884B7274E7080006D33BA /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		F2B01470274BF4BA009F36F9 = {
 			isa = PBXGroup;
 			children = (
@@ -259,15 +268,14 @@
 		F2B0147B274BF4BA009F36F9 /* Planets */ = {
 			isa = PBXGroup;
 			children = (
+				F20884B6274E704B006D33BA /* Resources */,
 				F2088485274D6551006D33BA /* Extensions */,
 				F2B014AF274C0B20009F36F9 /* Core */,
 				F208847C274CD30E006D33BA /* EntityGateway */,
 				F208847D274CD321006D33BA /* Scenes */,
 				F2B0147C274BF4BA009F36F9 /* AppDelegate.swift */,
 				F2B0147E274BF4BA009F36F9 /* SceneDelegate.swift */,
-				F2B01480274BF4BA009F36F9 /* ViewController.swift */,
 				F2B01482274BF4BA009F36F9 /* Main.storyboard */,
-				F2B01488274BF4BD009F36F9 /* Assets.xcassets */,
 				F2B0148A274BF4BD009F36F9 /* LaunchScreen.storyboard */,
 				F2B0148D274BF4BD009F36F9 /* Info.plist */,
 			);
@@ -461,7 +469,6 @@
 				F20884AC274DC295006D33BA /* CoreDataStack.swift in Sources */,
 				F2088492274D9324006D33BA /* ApiResponse.swift in Sources */,
 				F2088484274D5E17006D33BA /* PlanetTableViewCell.swift in Sources */,
-				F2B01481274BF4BA009F36F9 /* ViewController.swift in Sources */,
 				F2088498274D9424006D33BA /* ApiPlanetsGateway.swift in Sources */,
 				F208848E274D9263006D33BA /* ApiClient.swift in Sources */,
 				F2088495274D93AA006D33BA /* PlanetsApiRequest.swift in Sources */,
