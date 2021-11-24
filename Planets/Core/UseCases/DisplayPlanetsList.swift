@@ -7,7 +7,7 @@
 
 import Foundation
 
-typealias DisplayPlanetsUseCaseCompletionHandler = (_ books: Result<[Planet]>) -> Void
+typealias DisplayPlanetsUseCaseCompletionHandler = (_ planets: Result<[Planet]>) -> Void
 
 protocol DisplayPlanetsUseCase {
     func displayPlanets(completionHandler: @escaping DisplayPlanetsUseCaseCompletionHandler)
