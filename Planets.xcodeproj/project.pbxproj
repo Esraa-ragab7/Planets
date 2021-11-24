@@ -127,10 +127,10 @@
 		F208847E274D5847006D33BA /* Planets */ = {
 			isa = PBXGroup;
 			children = (
+				F20884A6274DA355006D33BA /* PlanetsConfigurator.swift */,
 				F208847F274D5B62006D33BA /* PlanetsTableViewController.swift */,
 				F2088481274D5C21006D33BA /* PlanetsPresenter.swift */,
 				F2088483274D5E17006D33BA /* PlanetTableViewCell.swift */,
-				F20884A6274DA355006D33BA /* PlanetsConfigurator.swift */,
 			);
 			path = Planets;
 			sourceTree = "<group>";
